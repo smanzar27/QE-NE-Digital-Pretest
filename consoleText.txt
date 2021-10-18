@@ -1,0 +1,836 @@
+Started by user Shadab Manzar
+Running as SYSTEM
+Building in workspace C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\NTUC
+The recommended git tool is: NONE
+No credentials specified
+ > git.exe rev-parse --resolve-git-dir C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\NTUC\.git # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/smanzar27/QE-NE-Digital-Pretest.git # timeout=10
+Fetching upstream changes from https://github.com/smanzar27/QE-NE-Digital-Pretest.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.33.0.windows.2'
+ > git.exe fetch --tags --force --progress -- https://github.com/smanzar27/QE-NE-Digital-Pretest.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Seen branch in repository origin/main
+Seen 1 remote branch
+ > git.exe show-ref --tags -d # timeout=10
+Checking out Revision e8d653b507f93c15530eb9ad2c2e991aac6db578 (origin/main)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f e8d653b507f93c15530eb9ad2c2e991aac6db578 # timeout=10
+Commit message: "ReadMe Creation"
+ > git.exe rev-list --no-walk e8d653b507f93c15530eb9ad2c2e991aac6db578 # timeout=10
+[NTUC] $ cmd /c call C:\WINDOWS\TEMP\jenkins6879214887046826099.bat
+
+C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\NTUC>mvn clean install -Dmaven.test.skip=true 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< org.example:com.ntuc.socialenterprises.qa >--------------
+[INFO] Building com.ntuc.socialenterprises.qa 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ com.ntuc.socialenterprises.qa ---
+[INFO] Deleting C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\NTUC\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ com.ntuc.socialenterprises.qa ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\NTUC\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ com.ntuc.socialenterprises.qa ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 17 source files to C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\NTUC\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ com.ntuc.socialenterprises.qa ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ com.ntuc.socialenterprises.qa ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ com.ntuc.socialenterprises.qa ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ com.ntuc.socialenterprises.qa ---
+[INFO] Building jar: C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\NTUC\target\com.ntuc.socialenterprises.qa-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ com.ntuc.socialenterprises.qa ---
+[INFO] Installing C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\NTUC\target\com.ntuc.socialenterprises.qa-1.0-SNAPSHOT.jar to C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\example\com.ntuc.socialenterprises.qa\1.0-SNAPSHOT\com.ntuc.socialenterprises.qa-1.0-SNAPSHOT.jar
+[INFO] Installing C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\NTUC\pom.xml to C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\example\com.ntuc.socialenterprises.qa\1.0-SNAPSHOT\com.ntuc.socialenterprises.qa-1.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.794 s
+[INFO] Finished at: 2021-10-19T01:43:30+08:00
+[INFO] ------------------------------------------------------------------------
+[NTUC] $ cmd /c call C:\WINDOWS\TEMP\jenkins8007185347502738004.bat
+
+C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\NTUC>mvn test -Dtest=CucumberRunner -Dcucumber.filter.tags="@GUI" 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< org.example:com.ntuc.socialenterprises.qa >--------------
+[INFO] Building com.ntuc.socialenterprises.qa 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ com.ntuc.socialenterprises.qa ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\NTUC\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ com.ntuc.socialenterprises.qa ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ com.ntuc.socialenterprises.qa ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 7 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ com.ntuc.socialenterprises.qa ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\NTUC\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ com.ntuc.socialenterprises.qa ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.ntuc.socialenterprises.qa.CucumberRunner
+
+@GUI @Test @TC
+Scenario: verify by default submit button is disable until user enters any name or click populate button # src/test/resources/features/ntuc.feature:8
+Test Base Setting Started
+Running Browser: CHROME
+log4j:WARN No appenders could be found for logger (io.netty.util.internal.logging.InternalLoggerFactory).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 35717
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 19, 2021 1:43:43 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Oct 19, 2021 1:43:43 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 94, so returning the closest version found: a no-op implementation
+Oct 19, 2021 1:43:43 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 94.
+Oct 19, 2021 1:43:43 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$0
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.0.0-beta-2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Test Base Setting Completed
+
+    STARTING TEST: verify by default submit button is disable until user enters any name or click populate button
+
+[@GUI, @Test, @TC]
+Verified: Page Title - TestCafe Example Page
+  Given the user open testcafe example webpage and validates page title                                  # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.loadApplicationPage()
+
+    Verified: Page Title - TestCafe Example Page
+
+Verified: Submit Button Disable
+  Then the user validates submit element is disable                                                      # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateElementEnabled(java.lang.String,java.lang.String)
+
+    Verified: Submit Button Disable
+
+  When the user enters name as test user                                                                 # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.setNameField(java.lang.String)
+Verified: Submit Button Enable
+  And the user validates submit element is enable                                                        # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateElementEnabled(java.lang.String,java.lang.String)
+
+    Verified: Submit Button Enable
+
+  When the user clear the name field                                                                     # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.clearNameField()
+Verified: Submit Button Disable
+  And the user validates submit element is disable                                                       # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateElementEnabled(java.lang.String,java.lang.String)
+
+    Verified: Submit Button Disable
+
+  And the user clicks on Populate button                                                                 # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.clickPopulateButton()
+  Then the user validates the pop up message and clicks OK                                               # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validatePopMessageAndClickOK()
+Verified: Submit Button Enable
+  And the user validates submit element is enable                                                        # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateElementEnabled(java.lang.String,java.lang.String)
+
+    Verified: Submit Button Enable
+
+  And the user submit the example page                                                                   # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.submitExamplePage()
+Verified: Page Title - Thank you!
+  Then the user validate thank you webpage title                                                         # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ThankStep.loadApplicationPage()
+
+    Verified: Page Title - Thank you!
+
+
+    COMPLETE TEST: verify by default submit button is disable until user enters any name or click populate button
+
+
+@GUI @Test @TC
+Scenario Outline: verify by default rating and comment are disable until user clicks on testcafe checkbox # src/test/resources/features/ntuc.feature:35
+Test Base Setting Started
+Running Browser: CHROME
+Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 16034
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 19, 2021 1:43:47 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Oct 19, 2021 1:43:47 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 94, so returning the closest version found: a no-op implementation
+Oct 19, 2021 1:43:47 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 94.
+Oct 19, 2021 1:43:47 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$0
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.0.0-beta-2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Test Base Setting Completed
+
+    STARTING TEST: verify by default rating and comment are disable until user clicks on testcafe checkbox
+
+[@GUI, @Test, @TC]
+Verified: Page Title - TestCafe Example Page
+  Given the user open testcafe example webpage and validates page title                                   # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.loadApplicationPage()
+
+    Verified: Page Title - TestCafe Example Page
+
+Submit Attribute Value: ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content ui-slider-disabled ui-state-disabled
+Verified: Rating Slider Disable
+  Then the user validates rating element is disable                                                       # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateElementEnabled(java.lang.String,java.lang.String)
+
+    Verified: Rating Slider Disable
+
+Verified: Comment Text Area Disable
+  And the user validates comment element is disable                                                       # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateElementEnabled(java.lang.String,java.lang.String)
+
+    Verified: Comment Text Area Disable
+
+  When the user click on TestCafe Checkbox                                                                # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.clickOperation()
+Submit Attribute Value: ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content
+Verified: Rating Slider Enable
+  Then the user validates rating element is enable                                                        # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateElementEnabled(java.lang.String,java.lang.String)
+
+    Verified: Rating Slider Enable
+
+Verified: Comment Text Area Enable
+  And the user validates comment element is enable                                                        # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateElementEnabled(java.lang.String,java.lang.String)
+
+    Verified: Comment Text Area Enable
+
+Verified: Rating value displayed from 1-10
+  Then the user validates 1-10 rating options are displayed                                               # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateRatingOptions()
+
+    Verified: Rating value displayed from 1-10
+
+  And the user select rating as 10 and add comment                                                        # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.selectRating(java.lang.String,java.lang.String)
+  And the user click on TestCafe Checkbox                                                                 # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.clickOperation()
+Submit Attribute Value: ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content ui-slider-disabled ui-state-disabled
+Verified: Rating Slider Disable
+  Then the user validates rating element is disable                                                       # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateElementEnabled(java.lang.String,java.lang.String)
+
+    Verified: Rating Slider Disable
+
+Verified: Comment Text Area Disable
+  And the user validates comment element is disable                                                       # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateElementEnabled(java.lang.String,java.lang.String)
+
+    Verified: Comment Text Area Disable
+
+  And the user click on TestCafe Checkbox                                                                 # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.clickOperation()
+Verified: Rating Comment: Rated: 10
+Verified: Rating Value: 10
+  And the user verify rating as 10 and add comment                                                        # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.selectRating(java.lang.String,java.lang.String)
+
+    Verified: Rating Comment: Rated: 10
+
+
+    Verified: Rating Value: 10
+
+
+    COMPLETE TEST: verify by default rating and comment are disable until user clicks on testcafe checkbox
+
+
+@GUI @Test @TC
+Scenario Outline: verify by default rating and comment are disable until user clicks on testcafe checkbox # src/test/resources/features/ntuc.feature:36
+Test Base Setting Started
+Running Browser: CHROME
+Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 44559
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 19, 2021 1:43:49 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Oct 19, 2021 1:43:49 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 94, so returning the closest version found: a no-op implementation
+Oct 19, 2021 1:43:49 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 94.
+Oct 19, 2021 1:43:49 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$0
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.0.0-beta-2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Test Base Setting Completed
+
+    STARTING TEST: verify by default rating and comment are disable until user clicks on testcafe checkbox
+
+[@GUI, @Test, @TC]
+Verified: Page Title - TestCafe Example Page
+  Given the user open testcafe example webpage and validates page title                                   # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.loadApplicationPage()
+
+    Verified: Page Title - TestCafe Example Page
+
+Submit Attribute Value: ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content ui-slider-disabled ui-state-disabled
+Verified: Rating Slider Disable
+  Then the user validates rating element is disable                                                       # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateElementEnabled(java.lang.String,java.lang.String)
+
+    Verified: Rating Slider Disable
+
+Verified: Comment Text Area Disable
+  And the user validates comment element is disable                                                       # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateElementEnabled(java.lang.String,java.lang.String)
+
+    Verified: Comment Text Area Disable
+
+  When the user click on TestCafe Checkbox                                                                # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.clickOperation()
+Submit Attribute Value: ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content
+Verified: Rating Slider Enable
+  Then the user validates rating element is enable                                                        # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateElementEnabled(java.lang.String,java.lang.String)
+
+    Verified: Rating Slider Enable
+
+Verified: Comment Text Area Enable
+  And the user validates comment element is enable                                                        # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateElementEnabled(java.lang.String,java.lang.String)
+
+    Verified: Comment Text Area Enable
+
+Verified: Rating value displayed from 1-10
+  Then the user validates 1-10 rating options are displayed                                               # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateRatingOptions()
+
+    Verified: Rating value displayed from 1-10
+
+  And the user select rating as 1 and add comment                                                         # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.selectRating(java.lang.String,java.lang.String)
+  And the user click on TestCafe Checkbox                                                                 # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.clickOperation()
+Submit Attribute Value: ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content ui-slider-disabled ui-state-disabled
+Verified: Rating Slider Disable
+  Then the user validates rating element is disable                                                       # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateElementEnabled(java.lang.String,java.lang.String)
+
+    Verified: Rating Slider Disable
+
+Verified: Comment Text Area Disable
+  And the user validates comment element is disable                                                       # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateElementEnabled(java.lang.String,java.lang.String)
+
+    Verified: Comment Text Area Disable
+
+  And the user click on TestCafe Checkbox                                                                 # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.clickOperation()
+Verified: Rating Comment: Rated: 1
+Verified: Rating Value: 1
+  And the user verify rating as 1 and add comment                                                         # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.selectRating(java.lang.String,java.lang.String)
+
+    Verified: Rating Comment: Rated: 1
+
+
+    Verified: Rating Value: 1
+
+
+    COMPLETE TEST: verify by default rating and comment are disable until user clicks on testcafe checkbox
+
+
+@GUI @Test @TC
+Scenario Outline: verify by default rating and comment are disable until user clicks on testcafe checkbox # src/test/resources/features/ntuc.feature:37
+Test Base Setting Started
+Running Browser: CHROME
+Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 25066
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 19, 2021 1:43:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Oct 19, 2021 1:43:52 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 94, so returning the closest version found: a no-op implementation
+Oct 19, 2021 1:43:52 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 94.
+Oct 19, 2021 1:43:52 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$0
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.0.0-beta-2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Test Base Setting Completed
+
+    STARTING TEST: verify by default rating and comment are disable until user clicks on testcafe checkbox
+
+[@GUI, @Test, @TC]
+Verified: Page Title - TestCafe Example Page
+  Given the user open testcafe example webpage and validates page title                                   # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.loadApplicationPage()
+
+    Verified: Page Title - TestCafe Example Page
+
+Submit Attribute Value: ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content ui-slider-disabled ui-state-disabled
+Verified: Rating Slider Disable
+  Then the user validates rating element is disable                                                       # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateElementEnabled(java.lang.String,java.lang.String)
+
+    Verified: Rating Slider Disable
+
+Verified: Comment Text Area Disable
+  And the user validates comment element is disable                                                       # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateElementEnabled(java.lang.String,java.lang.String)
+
+    Verified: Comment Text Area Disable
+
+  When the user click on TestCafe Checkbox                                                                # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.clickOperation()
+Submit Attribute Value: ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content
+Verified: Rating Slider Enable
+  Then the user validates rating element is enable                                                        # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateElementEnabled(java.lang.String,java.lang.String)
+
+    Verified: Rating Slider Enable
+
+Verified: Comment Text Area Enable
+  And the user validates comment element is enable                                                        # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateElementEnabled(java.lang.String,java.lang.String)
+
+    Verified: Comment Text Area Enable
+
+Verified: Rating value displayed from 1-10
+  Then the user validates 1-10 rating options are displayed                                               # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateRatingOptions()
+
+    Verified: Rating value displayed from 1-10
+
+  And the user select rating as 5 and add comment                                                         # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.selectRating(java.lang.String,java.lang.String)
+  And the user click on TestCafe Checkbox                                                                 # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.clickOperation()
+Submit Attribute Value: ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content ui-slider-disabled ui-state-disabled
+Verified: Rating Slider Disable
+  Then the user validates rating element is disable                                                       # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateElementEnabled(java.lang.String,java.lang.String)
+
+    Verified: Rating Slider Disable
+
+Verified: Comment Text Area Disable
+  And the user validates comment element is disable                                                       # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateElementEnabled(java.lang.String,java.lang.String)
+
+    Verified: Comment Text Area Disable
+
+  And the user click on TestCafe Checkbox                                                                 # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.clickOperation()
+Verified: Rating Comment: Rated: 5
+Verified: Rating Value: 5
+  And the user verify rating as 5 and add comment                                                         # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.selectRating(java.lang.String,java.lang.String)
+
+    Verified: Rating Comment: Rated: 5
+
+
+    Verified: Rating Value: 5
+
+
+    COMPLETE TEST: verify by default rating and comment are disable until user clicks on testcafe checkbox
+
+
+@GUI @Test @TC
+Scenario: verify user can multi select important features               # src/test/resources/features/ntuc.feature:39
+Test Base Setting Started
+Running Browser: CHROME
+Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 33753
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 19, 2021 1:43:54 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Oct 19, 2021 1:43:54 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 94, so returning the closest version found: a no-op implementation
+Oct 19, 2021 1:43:54 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 94.
+Oct 19, 2021 1:43:54 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$0
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.0.0-beta-2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Test Base Setting Completed
+
+    STARTING TEST: verify user can multi select important features
+
+[@GUI, @Test, @TC]
+Verified: Page Title - TestCafe Example Page
+  Given the user open testcafe example webpage and validates page title # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.loadApplicationPage()
+
+    Verified: Page Title - TestCafe Example Page
+
+Verified: Feature Option - Support for testing on remote devices
+Verified: Feature Option - Re-using existing JavaScript code for testing
+Verified: Feature Option - Running tests in background and/or in parallel in multiple browsers
+Verified: Feature Option - Easy embedding into a Continuous integration system
+Verified: Feature Option - Advanced traffic and markup analysis
+  Given the user validates find following important features            # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateFeatureList(java.lang.String,io.cucumber.datatable.DataTable)
+
+    Verified: Feature Option - Support for testing on remote devices
+
+
+    Verified: Feature Option - Re-using existing JavaScript code for testing
+
+
+    Verified: Feature Option - Running tests in background and/or in parallel in multiple browsers
+
+
+    Verified: Feature Option - Easy embedding into a Continuous integration system
+
+
+    Verified: Feature Option - Advanced traffic and markup analysis
+
+  When the user validates select following important features           # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateFeatureList(java.lang.String,io.cucumber.datatable.DataTable)
+Verified: Selected Feature - Support for testing on remote devices
+Verified: Selected Feature - Re-using existing JavaScript code for testing
+  When the user validates selected following important features         # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateFeatureList(java.lang.String,io.cucumber.datatable.DataTable)
+
+    Verified: Selected Feature - Support for testing on remote devices
+
+
+    Verified: Selected Feature - Re-using existing JavaScript code for testing
+
+
+    COMPLETE TEST: verify user can multi select important features
+
+
+@GUI @Test @TC
+Scenario: verify user can select an operating system                    # src/test/resources/features/ntuc.feature:56
+Test Base Setting Started
+Running Browser: CHROME
+Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 41722
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 19, 2021 1:43:57 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Oct 19, 2021 1:43:57 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 94, so returning the closest version found: a no-op implementation
+Oct 19, 2021 1:43:57 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 94.
+Oct 19, 2021 1:43:57 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$0
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.0.0-beta-2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Test Base Setting Completed
+
+    STARTING TEST: verify user can select an operating system
+
+[@GUI, @Test, @TC]
+Verified: Page Title - TestCafe Example Page
+  Given the user open testcafe example webpage and validates page title # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.loadApplicationPage()
+
+    Verified: Page Title - TestCafe Example Page
+
+find
+Verified: OS Option - Windows
+find
+Verified: OS Option - MacOS
+find
+Verified: OS Option - Linux
+  Given the user validates find following operating system              # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateOperatingSystem(java.lang.String,io.cucumber.datatable.DataTable)
+
+    Verified: OS Option - Windows
+
+
+    Verified: OS Option - MacOS
+
+
+    Verified: OS Option - Linux
+
+select
+  When the user validates select following operating system             # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateOperatingSystem(java.lang.String,io.cucumber.datatable.DataTable)
+selected
+Verified: Selected OS - Linux
+  Then the user validates selected following operating system           # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateOperatingSystem(java.lang.String,io.cucumber.datatable.DataTable)
+
+    Verified: Selected OS - Linux
+
+
+    COMPLETE TEST: verify user can select an operating system
+
+
+@GUI @Test @TC
+Scenario: verify user can select testcafe interface                     # src/test/resources/features/ntuc.feature:69
+Test Base Setting Started
+Running Browser: CHROME
+Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 9927
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 19, 2021 1:43:59 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Oct 19, 2021 1:43:59 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 94, so returning the closest version found: a no-op implementation
+Oct 19, 2021 1:43:59 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 94.
+Oct 19, 2021 1:43:59 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$0
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.0.0-beta-2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Test Base Setting Completed
+
+    STARTING TEST: verify user can select testcafe interface
+
+[@GUI, @Test, @TC]
+Verified: Page Title - TestCafe Example Page
+  Given the user open testcafe example webpage and validates page title # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.loadApplicationPage()
+
+    Verified: Page Title - TestCafe Example Page
+
+Command Line
+Verified: Interface Option - Command Line
+JavaScript API
+Verified: Interface Option - JavaScript API
+Both
+Verified: Interface Option - Both
+  Given the user validates find following interface                     # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateInterface(java.lang.String,io.cucumber.datatable.DataTable)
+
+    Verified: Interface Option - Command Line
+
+
+    Verified: Interface Option - JavaScript API
+
+
+    Verified: Interface Option - Both
+
+JavaScript API
+  When the user validates select following interface                    # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateInterface(java.lang.String,io.cucumber.datatable.DataTable)
+JavaScript API
+Verified: Interface Option - JavaScript API
+  Then the user validates selected following interface                  # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateInterface(java.lang.String,io.cucumber.datatable.DataTable)
+
+    Verified: Interface Option - JavaScript API
+
+
+    COMPLETE TEST: verify user can select testcafe interface
+
+
+@GUI @Test @TC
+Scenario: verify user entered name gets displayed on thanks page on clicking submit button # src/test/resources/features/ntuc.feature:83
+Test Base Setting Started
+Running Browser: CHROME
+Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 41329
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 19, 2021 1:44:02 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Oct 19, 2021 1:44:02 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 94, so returning the closest version found: a no-op implementation
+Oct 19, 2021 1:44:02 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 94.
+Oct 19, 2021 1:44:02 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$0
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.0.0-beta-2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Test Base Setting Completed
+
+    STARTING TEST: verify user entered name gets displayed on thanks page on clicking submit button
+
+[@GUI, @Test, @TC]
+Verified: Page Title - TestCafe Example Page
+  Given the user open testcafe example webpage and validates page title                    # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.loadApplicationPage()
+
+    Verified: Page Title - TestCafe Example Page
+
+  When the user enters name as Test User                                                   # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.setNameField(java.lang.String)
+  And the user submit the example page                                                     # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.submitExamplePage()
+Verified: Page Title - Thank you!
+  Then the user validate thank you webpage title                                           # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ThankStep.loadApplicationPage()
+
+    Verified: Page Title - Thank you!
+
+Verified: Name Matched on Thank Page
+  And the user validates message on thank page for Test User                               # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ThankStep.validateThanksMessage(java.lang.String)
+
+    Verified: Name Matched on Thank Page
+
+
+    COMPLETE TEST: verify user entered name gets displayed on thanks page on clicking submit button
+
+
+@GUI @Test @TC
+Scenario: verify system default user name gets displayed on thanks page when populate and submit button are click in sequence # src/test/resources/features/ntuc.feature:89
+Test Base Setting Started
+Running Browser: CHROME
+Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 45663
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 19, 2021 1:44:05 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Oct 19, 2021 1:44:05 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 94, so returning the closest version found: a no-op implementation
+Oct 19, 2021 1:44:05 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 94.
+Oct 19, 2021 1:44:05 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$0
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.0.0-beta-2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Test Base Setting Completed
+
+    STARTING TEST: verify system default user name gets displayed on thanks page when populate and submit button are click in sequence
+
+[@GUI, @Test, @TC]
+Verified: Page Title - TestCafe Example Page
+  Given the user open testcafe example webpage and validates page title                                                       # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.loadApplicationPage()
+
+    Verified: Page Title - TestCafe Example Page
+
+  When the user clicks on Populate button                                                                                     # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.clickPopulateButton()
+  And the user validates the pop up message and clicks OK                                                                     # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validatePopMessageAndClickOK()
+Verified:  User Name - : Peter Parker
+  And the user validates the default name is displayed as Peter Parker                                                        # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateUserName(java.lang.String,java.lang.String)
+
+    Verified:  User Name - : Peter Parker
+
+  When the user submit the example page                                                                                       # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.submitExamplePage()
+Verified: Page Title - Thank you!
+  Then the user validate thank you webpage title                                                                              # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ThankStep.loadApplicationPage()
+
+    Verified: Page Title - Thank you!
+
+Verified: Name Matched on Thank Page
+  And the user validates message on thank page for Peter Parker                                                               # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ThankStep.validateThanksMessage(java.lang.String)
+
+    Verified: Name Matched on Thank Page
+
+
+    COMPLETE TEST: verify system default user name gets displayed on thanks page when populate and submit button are click in sequence
+
+
+@GUI @Test @TC
+Scenario: verify testcafe.io web app get open by clicking testcafe link on thanks page # src/test/resources/features/ntuc.feature:97
+Test Base Setting Started
+Running Browser: CHROME
+Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 33977
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 19, 2021 1:44:08 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Oct 19, 2021 1:44:08 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 94, so returning the closest version found: a no-op implementation
+Oct 19, 2021 1:44:08 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 94.
+Oct 19, 2021 1:44:08 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$0
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.0.0-beta-2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Test Base Setting Completed
+
+    STARTING TEST: verify testcafe.io web app get open by clicking testcafe link on thanks page
+
+[@GUI, @Test, @TC]
+Verified: Page Title - TestCafe Example Page
+  Given the user open testcafe example webpage and validates page title                # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.loadApplicationPage()
+
+    Verified: Page Title - TestCafe Example Page
+
+  When the user enters name as Test User                                               # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.setNameField(java.lang.String)
+  And the user submit the example page                                                 # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.submitExamplePage()
+Verified: Page Title - Thank you!
+  Then the user validate thank you webpage title                                       # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ThankStep.loadApplicationPage()
+
+    Verified: Page Title - Thank you!
+
+Verified: Name Matched on Thank Page
+  And the user validates message on thank page for Test User                           # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ThankStep.validateThanksMessage(java.lang.String)
+
+    Verified: Name Matched on Thank Page
+
+  And the user click on href link for more detail TestCafe Application                 # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ThankStep.validateMoreMessage()
+Verified: Page Title - Cross-Browser End-to-End Testing Framework | Test?afe
+  And the user validate TestCafe Web Application webpage title                         # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ThankStep.loadTestCafePage()
+
+    Verified: Page Title - Cross-Browser End-to-End Testing Framework | TestСafe
+
+
+    COMPLETE TEST: verify testcafe.io web app get open by clicking testcafe link on thanks page
+
+
+@GUI @Test @TC
+Scenario: verify e2e testcafe application functionality for user entered name # src/test/resources/features/ntuc.feature:106
+Test Base Setting Started
+Running Browser: CHROME
+Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 2464
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 19, 2021 1:44:17 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Oct 19, 2021 1:44:17 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 94, so returning the closest version found: a no-op implementation
+Oct 19, 2021 1:44:17 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 94.
+Oct 19, 2021 1:44:17 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$0
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.0.0-beta-2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Test Base Setting Completed
+
+    STARTING TEST: verify e2e testcafe application functionality for user entered name
+
+[@GUI, @Test, @TC]
+Verified: Page Title - TestCafe Example Page
+  Given the user open testcafe example webpage and validates page title       # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.loadApplicationPage()
+
+    Verified: Page Title - TestCafe Example Page
+
+  When the user enters name as Test User                                      # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.setNameField(java.lang.String)
+  And the user click on TestCafe Checkbox                                     # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.clickOperation()
+  And the user select rating as 4 and add comment                             # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.selectRating(java.lang.String,java.lang.String)
+  And the user validates select following important features                  # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateFeatureList(java.lang.String,io.cucumber.datatable.DataTable)
+select
+  And the user validates select following operating system                    # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateOperatingSystem(java.lang.String,io.cucumber.datatable.DataTable)
+JavaScript API
+  And the user validates select following interface                           # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateInterface(java.lang.String,io.cucumber.datatable.DataTable)
+  And the user submit the example page                                        # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.submitExamplePage()
+Verified: Name Matched on Thank Page
+  Then the user validates message on thank page for Test User                 # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ThankStep.validateThanksMessage(java.lang.String)
+
+    Verified: Name Matched on Thank Page
+
+Verified: Page Title - Thank you!
+  Then the user validate thank you webpage title                              # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ThankStep.loadApplicationPage()
+
+    Verified: Page Title - Thank you!
+
+  And the user click on href link for more detail TestCafe Application        # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ThankStep.validateMoreMessage()
+Verified: Page Title - Cross-Browser End-to-End Testing Framework | Test?afe
+  And the user validate TestCafe Web Application webpage title                # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ThankStep.loadTestCafePage()
+
+    Verified: Page Title - Cross-Browser End-to-End Testing Framework | TestСafe
+
+
+    COMPLETE TEST: verify e2e testcafe application functionality for user entered name
+
+
+@GUI @Test @TC
+Scenario: verify e2e testcafe application functionality for default system entered name # src/test/resources/features/ntuc.feature:128
+Test Base Setting Started
+Running Browser: CHROME
+Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 6192
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 19, 2021 1:44:21 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Oct 19, 2021 1:44:21 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 94, so returning the closest version found: a no-op implementation
+Oct 19, 2021 1:44:21 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 94.
+Oct 19, 2021 1:44:21 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$0
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.0.0-beta-2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Test Base Setting Completed
+
+    STARTING TEST: verify e2e testcafe application functionality for default system entered name
+
+[@GUI, @Test, @TC]
+Verified: Page Title - TestCafe Example Page
+  Given the user open testcafe example webpage and validates page title                 # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.loadApplicationPage()
+
+    Verified: Page Title - TestCafe Example Page
+
+  When the user clicks on Populate button                                               # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.clickPopulateButton()
+  Then the user validates the pop up message and clicks OK                              # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validatePopMessageAndClickOK()
+  And the user click on TestCafe Checkbox                                               # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.clickOperation()
+  And the user select rating as 6 and add comment                                       # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.selectRating(java.lang.String,java.lang.String)
+  And the user validates select following important features                            # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateFeatureList(java.lang.String,io.cucumber.datatable.DataTable)
+select
+  And the user validates select following operating system                              # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateOperatingSystem(java.lang.String,io.cucumber.datatable.DataTable)
+JavaScript API
+  And the user validates select following interface                                     # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.validateInterface(java.lang.String,io.cucumber.datatable.DataTable)
+  And the user submit the example page                                                  # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ExampleStep.submitExamplePage()
+Verified: Name Matched on Thank Page
+  Then the user validates message on thank page for Peter Parker                        # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ThankStep.validateThanksMessage(java.lang.String)
+
+    Verified: Name Matched on Thank Page
+
+Verified: Page Title - Thank you!
+  Then the user validate thank you webpage title                                        # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ThankStep.loadApplicationPage()
+
+    Verified: Page Title - Thank you!
+
+  And the user click on href link for more detail TestCafe Application                  # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ThankStep.validateMoreMessage()
+Verified: Page Title - Cross-Browser End-to-End Testing Framework | Test?afe
+  And the user validate TestCafe Web Application webpage title                          # com.ntuc.socialenterprises.qa.stepdefinitions.testcafe.ThankStep.loadTestCafePage()
+
+    Verified: Page Title - Cross-Browser End-to-End Testing Framework | TestСafe
+
+
+    COMPLETE TEST: verify e2e testcafe application functionality for default system entered name
+
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 48.701 sec - in com.ntuc.socialenterprises.qa.CucumberRunner
+
+Results :
+
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  55.690 s
+[INFO] Finished at: 2021-10-19T01:44:28+08:00
+[INFO] ------------------------------------------------------------------------
+[CucumberReport] Using Cucumber Reports version 5.6.0
+[CucumberReport] JSON report directory is ""
+[CucumberReport] Copied 6 properties files from workspace "C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\NTUC" to reports directory "C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\jobs\NTUC\builds\5\cucumber-html-reports\.cache"
+[CucumberReport] Copied 1 files from workspace "C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\NTUC" to reports directory "C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\jobs\NTUC\builds\5\cucumber-html-reports\.cache"
+[CucumberReport] Processing 1 json files:
+[CucumberReport] C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\jobs\NTUC\builds\5\cucumber-html-reports\.cache\target\cucumber.json
+[Cucumber Tests] Parsing results.
+[Cucumber Tests] parsing cucumber.json
+Finished: SUCCESS
